@@ -1,0 +1,91 @@
+/* Color Pallet */
+:root {
+  --primary-yellow: #f6cc5c;
+  --primary-red: #cf262d;
+  --primary-green: #49ac52;
+  --primary-blue: #009fb7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-red);
+}
+
+/* SCOREBOARD AREA */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.5em;
+}
+
+.user-score,
+.bot-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* SCOREBOARD AREA ABOVE */
+
+/* GAME BOARD CONTAINER */
+.game-container {
+  margin: 1rem auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  font-size: 2rem;
+  border: 1px solid black;
+}
+
+.container-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 0px 1px #000;
+}
+/* GAME BOARD ABOVE */
+
+/* RESET BUTTON */
+.footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-reset {
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 0px 0px black;
+}
+.footer-reset:hover,
+.footer-reset:focus {
+  cursor: pointer;
+  background-color: var(--primary-blue);
+  transform: scale(1.1);
+}
+
+.footer-reset.music {
+  display: flex;
+  padding: 0.8rem;
+}
+
+/* RESET BUTTON ABOVE */
+
+.active {
+  background-color: yellow;
+}

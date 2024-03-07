@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <!-- GOOGLE FONTS ABOVE -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+
+    <div class="scoreboard">
+      <div class="user-score">
+        <h2>User Score</h2>
+        <span>0</span>
+      </div>
+      <div class="bot-score">
+        <h2>Bot Score</h2>
+        <span>0</span>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="container-boxes winning-combination one"></div>
+      <div class="container-boxes winning-combination two"></div>
+      <div class="container-boxes winning-combination three"></div>
+
+      <div class="container-boxes winning-combination four"></div>
+      <div class="container-boxes winning-combination five"></div>
+      <div class="container-boxes winning-combination six"></div>
+
+      <div class="container-boxes winning-combination seven"></div>
+      <div class="container-boxes winning-combination eight"></div>
+      <div class="container-boxes winning-combination nine"></div>
+    </div>
+
+    <div class="footer">
+      <button id="game-reset" class="footer-reset" type="button">RESET</button>
+      <button class="footer-reset music toggle-button">
+        <img src="./volume_up_FILL0_wght400_GRAD0_opsz24.png" alt="mute/unmute music" />
+      </button>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+      <source src="./sound K Pixabay Background Music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="app.js"></script>
+  </body>
+</html>
